@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>이미지</title>
+    <link rel="stylesheet" type="text/css" href="./css/car.css">
+    <style>
+        #rolling li.selected a > .border {
+            display:block;
+        }
+
+        .hidden {
+            display:none !important;
+        }
+
+        #pagination {
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="width:980px;padding:50px">
+<div class="imgview_lst v2 __normal" data-thumb-list>
+    <div id="rolling">
+        <ul style="left:0" data-list-wrap>
+        </ul>
+    </div>
+    <a href="#" class="btn_prev hidden" data-prev-btn><span>이전목록</span></a>
+    <span class="btn_prev" data-prev-arrow>이전목록</span>
+    <a href="#" class="btn_next hidden" data-next-btn><span>다음목록</span></a>
+    <span class="btn_next" data-next-arrow>다음목록</span>
+</div>
+
+<!-- [D] 이미지 로딩중이 아닐때-->
+<div class="view_bigimg v2 __notload" data-image-screen>
+    <span class="frame"></span>
+    <div class="img_loading">
+        <div id="">
+            <ul style="left:0;" data-list-wrap>
+                <li><img src="./img/img980x654_1.png" width="980" height="654"></li>
+                <li><img src="./img/img980x654_1.png" width="980" height="654"></li>
+                <li><img src="./img/img980x654_1.png" width="980" height="654"></li>
+            </ul>
+        </div>
+        <!-- [D] 이미지 없으면 삭제 -->
+        <a href="#" title="이전 이미지" class="btn_prev" data-prev-btn><span>이전 이미지</span><div class="mask"></div></a>
+        <a href="#" title="다음 이미지" class="btn_next" data-next-btn><span>다음 이미지</span><div class="mask"></div></a>
+    </div>
+</div>
+
+<div id="pagination">0/0</div>
+
+
+<script type="module" src="./js/app.js"></script>
+
+</body>
+</html>
